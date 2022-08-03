@@ -1,8 +1,8 @@
 body{
-    background-color: #1488cc;
-    background: linear-gradient(to right, #006db3, #29b6f6);
+    background-color: #1b252b;
+    background: linear-gradient(to right, #15181a, #01344b);
 }
 
 .glass_efect{
-    background: hsla(0, 0%, 100%, 0.3);
+    background: hsla(0, 0%, 40%, 0.2);
 }

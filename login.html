@@ -10,30 +10,32 @@
         <title>Login</title>
 </head>
 <body>
-    <div class="vh-100 d-flex justify-content-center align-items-center">
-
-        <div class="card glass_efect text-white">
-
-            <div class="card-header text-center">
-
-                <h2 class="text-uppercase m-2">Login</h2>
-            
-            </div>
-
-            <div class="card-body text-center">
-                <form action="">
-                    <div class="col g-0 my-2">
-                        <label class="form-label" for="email">Email</label>
-                        <input type="email" id="email" class="form-control" />
+    <div class="container">
+        <div class="vh-100 d-flex align-items-center justify-content-center text-white">
+            <div class="col-lg-4 col-md-7 glass_efect p-5">
+                <h1 class="h3 text-center mb-5 text-uppercase">Login</h1>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required autofocus>
+                        <label for="inputEmail" class="visually-hidden">E-mail</label>
                     </div>
-    
-                    <div class="col g-0 my-2">
-                        <label class="form-label" for="password">Password</label>
-                        <input type="password" id="password" class="form-control" />
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        <label for="inputPassword" class="visually-hidden">Password</label>
+                    </div>
+                    <div class="mb-3">
+                        <label>
+                            <input type="checkbox" value="rememberMe"> Remember-me
+                        </label>
+                    </div>
+                    <div class="d-grid gap-2 mb-3">
+                        <input type="button" class="btn btn-success" value="Sign In">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <input type="button" class="btn btn-secondary" value="Sign Up">
                     </div>
                 </form>
             </div>
-
         </div>
     </div>
 </body>
