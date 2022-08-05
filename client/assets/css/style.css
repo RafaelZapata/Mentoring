@@ -1,8 +1,12 @@
-body{
+body {
     background-color: #1b252b;
     background: linear-gradient(to right, #15181a, #01344b);
 }
 
-.glass_efect{
+.glass-effect {
     background: hsla(0, 0%, 40%, 0.2);
+}
+
+.text-white {
+  color: white;
 }

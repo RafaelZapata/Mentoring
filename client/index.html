@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <p class="text-white">Aguarde um momento...</p>
+  </body>
+
+  <script type="text/javascript">
+    const user = JSON.parse( localStorage.getItem("@user/data") );
+
+    window.location.href = (function() {
+      if (typeof user === "object" && user !== null)
+        return "pages/dashboard.html";
+
+      return "pages/login.html";
+    })();
+  </script>
+</html>
