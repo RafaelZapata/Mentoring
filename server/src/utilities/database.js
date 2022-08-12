@@ -1,8 +1,8 @@
-const { MongoClient } = require("mongodb");
+import { MongoClient } from "mongodb";
 
 const client = new MongoClient(process.env.DATABASE_URI);
 
-module.exports = async function connect() {
+export default async function connect() {
   try {
     await client.connect();
 
